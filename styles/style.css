@@ -247,6 +247,9 @@
   
   .lable {
     -webkit-text-stroke: 1px var(--text-color-shadow);
+    -moz-text-stroke: 1px var(--text-color-shadow);
+    -o-text-stroke: 1px var(--text-color-shadow);
+    -ms-text-stroke: 1px var(--text-color-shadow);
     text-stroke: 1px var(--text-color-shadow);
     text-shadow: none;
   }
