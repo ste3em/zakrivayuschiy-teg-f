@@ -232,7 +232,7 @@
   filter: blur(15px);
 }
 
-.filter-invert {
+.filter-multiinvert {
   filter: invert(80%) hue-rotate(0.7turn) brightness(60%);
 }
 
