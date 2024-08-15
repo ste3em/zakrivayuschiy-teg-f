@@ -2,6 +2,7 @@
 
 
 :root {
+  --color-black: black;
   --background-color: white;
   --border-color: black;
   --text-color: black;
@@ -17,14 +18,14 @@
   --text-size: 18px;
   --heading-font-weight: 700;
   --text-font-weight: 400;
-  --c1: #d3d3d3;
-  --c2: #e7e7e7;
-  --c3: #1a1a1a;
+  --color-gradient1: #d3d3d3;
+  --color-gradient2: #e7e7e7;
+  --color-gradient3: #1a1a1a;
   --background-image-gradient: repeating-linear-gradient(
       90deg,
-      var(--c1) 0 2px,
+      var(--color-gradient1) 0 2px,
       transparent 2px 4px
     ),
-    repeating-linear-gradient(0deg, var(--c1) 0 2px, transparent 2px 4px),
-    linear-gradient(var(--c2), var(--c3));
+    repeating-linear-gradient(0deg, var(--color-gradient1) 0 2px, transparent 2px 4px),
+    linear-gradient(var(--color-gradient2), var(--color-gradient3));
 }

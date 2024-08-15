@@ -25,11 +25,12 @@
 }
 
 .like-icon.is-liked .heart {
+  transform-origin: center;
   animation-name: heart;
   animation-delay: 0.1s;
-  animation-duration: 0.3s;
+  animation-direction: alternate;
   animation-timing-function: ease-in;
-  transform-origin: center;
+  animation-duration: 0.3s;
 }
 
 @keyframes heart {
@@ -48,11 +49,11 @@
 }
 
 .like-icon.is-liked .sparks {
+  transform-origin: center;
   animation-name: sparks;
   animation-delay: 0.3s;
-  animation-duration: 0.3s;
   animation-timing-function: ease-in;
-  transform-origin: center;
+  animation-duration: 0.3s;
 }
 
 @keyframes sparks {
@@ -72,76 +73,75 @@
 
 .contour {
   fill: var(--border-color);
-  transition-property: fill;
   transition-duration: 0.1s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .core {
   fill: transparent;
-  transition-property: fill;
   transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .heart:hover .core {
   fill: var(--border-color);
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-delay: 0.05s;
+  transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .heart:active .core {
   fill: var(--like-color);
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-delay: 0.05s;
+  transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .main-body {
   fill: transparent;
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-delay: 0.03s;
+  transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .heart:hover .main-body {
   fill: var(--border-color);
-  transition-property: fill;
   transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .heart:active .main-body {
   fill: var(--like-color);
-  transition-property: fill;
   transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--like-color);
-  transition-property: fill;
   transition-duration: 0.3s;
-  transition-delay: 0.03s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .like-icon.is-liked .core {
   fill: var(--like-color);
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-delay: 0.05s;
+  transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--like-color);
-  transition-property: fill;
-  transition-duration: 0.3s;
   transition-delay: 0.06s;
+  transition-duration: 0.3s;
+  transition-property: fill;
   transition-timing-function: linear;
 }
