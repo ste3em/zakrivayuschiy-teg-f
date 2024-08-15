@@ -19,9 +19,9 @@
   --text-size: 18px;
   --heading-font-weight: 700;
   --text-font-weight: 400;
-  --c1: #d3d3d3;
-  --c2: #e7e7e7;
-  --c3: #1a1a1a;
+  --color-gradient1: #d3d3d3;
+  --color-gradient2: #e7e7e7;
+  --color-gradient3: #1a1a1a;
 }
 
 :root.theme-dark {
@@ -34,9 +34,9 @@
   --like-color: #f00;
   --heading-font-weight: 785;
   --text-font-weight: 465;
-  --c1: #000;
-  --c2: #007f0c;
-  --c3: #004306;
+  --color-gradient1: #000;
+  --color-gradient2: #007f0c;
+  --color-gradient3: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,8 +51,8 @@
     --like-color: #f00;
     --heading-font-weight: 785;
     --text-font-weight: 465;
-    --c1: #000;
-    --c2: #007f0c;
-    --c3: #004306;
+    --color-gradient1: #000;
+    --color-gradient2: #007f0c;
+    --color-gradient3: #004306;
   }
 }

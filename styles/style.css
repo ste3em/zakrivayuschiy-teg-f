@@ -17,7 +17,7 @@
 .page {
   padding-block-start: 99px;
   color: var(--text-color, black);
-  font-family: var(--font, sans-serif);
+  font-family: var(--font, fantasy);
   font-size: var(--text-size, 18px);
   font-style: normal;
   background-color: var(--background-color, white);
@@ -37,7 +37,7 @@
 .button {
   border: none;
   padding: 0;
-  font-family: var(--font-accent, sans-serif);
+  font-family: var(--font-accent, fantasy);
   font-weight: 400;
   font-size: var(--text-menu-size, 14px);
   font-style: normal;
@@ -78,7 +78,7 @@
 .header__title {
   order: 2;
   margin-block-end: 24px;
-  font-family: var(--font-accent, sans-serif);
+  font-family: var(--font-accent, fantasy);
   font-weight: 400;
   font-size: var(--title-size);
   font-style: normal;
@@ -89,7 +89,7 @@
 .header__subtitle {
   order: 1;
   margin-block-end: 20px;
-  font-family: var(--font-accent, sans-serif);
+  font-family: var(--font-accent, fantasy);
   font-weight: 400;
   font-size: var(--subtitle-size);
   font-style: normal;
@@ -240,7 +240,7 @@
   top: 25px;
   right: 25px;
   opacity: 0.5;
-  font-family: var(--font-accent, sans-serif);
+  font-family: var(--font-accent, fantasy);
   font-size: var(--text-menu-size, 14px);
   text-transform: uppercase;
   text-shadow:
@@ -407,7 +407,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: var(--font-accent, sans-serif);
+  font-family: var(--font-accent, fantasy);
   font-size: var(--text-menu-size, 14px);
   line-height: 1.5;
   text-transform: uppercase;
