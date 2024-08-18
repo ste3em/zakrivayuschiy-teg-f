@@ -18,12 +18,10 @@
   </head>
   <body class="page">
     <header class="header border container">
-    <a class="logo" href="#">
-      <h1 class="logo-group">
-      <span class="header__title">закрывающий тег</span>
-      <span class="header__subtitle">&lt;/html&gt;</span>
-    </h1>
-    </a>
+     <div class="logo-group">
+      <a class="header__subtitle" href="#">&lt;/html&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
+     </div>    
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -63,7 +61,7 @@
         <h2 class="card__heading">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image"
             loading="lazy"
@@ -89,6 +87,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -126,7 +125,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">1 спринт: Я — чистый лист</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-multiple"
             loading="lazy"
@@ -154,6 +153,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -191,7 +191,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">1 спринт: А если не получится?</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-saturate"
             loading="lazy"
@@ -217,6 +217,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -254,7 +255,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">2 спринт: Погоня за идеалом</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-hue-rotate"
             loading="lazy"
@@ -282,6 +283,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -319,7 +321,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">2 спринт: О тех, кто рядом</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-invert"
             loading="lazy"
@@ -348,6 +350,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -385,7 +388,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">3 спринт: Обходные стратегии</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-sepia"
             loading="lazy"
@@ -411,6 +414,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -448,7 +452,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">3 спринт: Когда опускаются руки</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-blur"
             loading="lazy"
@@ -476,6 +480,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -513,7 +518,7 @@
       </article>
       <article class="card border">
         <h2 class="card__heading">«Сейчас я здесь»</h2>
-        <div class="card__image-inner-wrap border">
+        <div class="card__image-inner-wrap">
           <img
             class="card__image filter-multiinvert"
             loading="lazy"
@@ -543,6 +548,7 @@
                 height="36"
                 viewBox="0 0 39 36"
                 fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -584,14 +590,14 @@
         onclick="window['dialog'].showModal()"
         aria-controls="dialog"
       >
-        <svg class="button__svg" viewBox="0 0 40 40">
+        <svg class="button__svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text"> Сохранить на память </span>
       </button>
       <dialog class="dialog border" id="dialog">
         <div class="box">
-          <svg class="dialog__svg">
+          <svg class="dialog__svg" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <p>Вставьте дискету, чтобы продолжить</p>
