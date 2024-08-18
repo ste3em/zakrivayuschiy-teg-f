@@ -143,9 +143,9 @@
 
 .theme-menu__button::after {
   content: '';
-  display: block;
   right: 0;
   bottom: -3px;
+  display: block;
   width: 100%;
   height: 2px;
   opacity: 0.6;
@@ -164,8 +164,8 @@
 }
 
 .theme-menu__button:focus-visible {
-  opacity: 0.6;
   outline: none;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -240,7 +240,7 @@
   (text-stroke: 1px var(--text-color-shadow)) or
     (-webkit-text-stroke: 1px var(--text-color-shadow))
 ) {
-  
+
   .lable {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--text-color-shadow);
@@ -381,7 +381,7 @@
   display: flex;
 }
 
-.dialog__button {  
+.dialog__button {
   flex-grow: 1;
   padding: 10px;
   text-transform: uppercase;
@@ -435,7 +435,7 @@
     right: 11px;
   }
   .card .lable {
-    text-transform: none;    
+    text-transform: none;
   }
 
   .card:nth-of-type(-n+3) .lable {
