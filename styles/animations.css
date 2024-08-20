@@ -16,16 +16,19 @@
 @keyframes arrow {
 
   from {
-    transform: translateX(0);
+    inset-inline-start: -20px;
   }
-
+  50% {
+    inset-inline-start: -16px;
+  }
   to {
-    transform: translateX(-4px);
+    inset-inline-start: -20px;
   }
 }
 
 .like-icon.is-liked .heart {
   transform-origin: center;
+  animation: heartScale 0.3s ease-in alternate 0.1s;
   animation-name: heart;
   animation-delay: 0.1s;
   animation-direction: alternate;
@@ -38,9 +41,11 @@
   from {
     transform: scale(1);
   }
-
-  to {
+  50% {
     transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
@@ -144,4 +149,56 @@
   transition-duration: 0.3s;
   transition-property: fill;
   transition-timing-function: linear;
+}
+
+.card__icon-button .contour {
+  transition: fill 0.3s linear 0.06s;
+}
+
+.card__icon-button .core {
+  transition: fill 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--main-color, #000);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button .main-body {
+  transition: fill 0.3s linear 0.05s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--main-color, #000);
+  transition: fill 0.3s linear 0;
+}
+
+.card__icon-button:active .core {
+  fill: var(--heart-color, #FF0000);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--heart-color, #FF0000);
+  transition: fill 0.3s linear 0;
+}
+
+.card__icon-button .sparks {
+  opacity: 0;
+}
+
+.card__like-button::before {
+  background-color: var(--border-color, black);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.card__like-button:hover::before {
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.card__like-button:focus {
+  box-shadow: 2px 2px 0 var(--main-color, #000);
 }

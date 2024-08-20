@@ -2,15 +2,18 @@
 
 
 :root {
+  --main-color: #000;
   --color-black: black;
   --background-color: white;
   --border-color: black;
   --text-color: black;
   --accent-color: black;
+  --content-size: clamp(375px, 70vi, 700px);
   --text-color-accent: black;
   --text-color-shadow: white;
   --color-span-button: white;
   --like-color: #f00;
+  --heart-color: #FF0000;
   --font: 'Inter-Variable';
   --font-accent: 'PressStart2P';
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
