@@ -2,34 +2,15 @@
 
 
 :root {
-  --main-color: #000;
-  --color-black: black;
-  --background-color: white;
-  --border-color: black;
-  --text-color: black;
-  --accent-color: black;
+  --main-font: 'Inter-Variable';
+  --accent-font: 'PressStart2P';
+  --main-font-weight-title: 700;
+  --main-font-weight-text: 400;
   --content-size: clamp(375px, 70vi, 700px);
-  --text-color-accent: black;
-  --text-color-shadow: white;
-  --color-span-button: white;
-  --like-color: #f00;
+  --main-color: #000;
+  --bg-color: #fff;
+  --grid-gradient-color: #d3d3d3;
+  --bg-gradient-color-main: #e7e7e7;
+  --bg-gradient-color-secondary: #1a1a1a;
   --heart-color: #FF0000;
-  --font: 'Inter-Variable';
-  --font-accent: 'PressStart2P';
-  --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-  --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --text-menu-size: 14px;
-  --text-size: 18px;
-  --heading-font-weight: 700;
-  --text-font-weight: 400;
-  --color-gradient1: #d3d3d3;
-  --color-gradient2: #e7e7e7;
-  --color-gradient3: #1a1a1a;
-  --background-image-gradient: repeating-linear-gradient(
-      90deg,
-      var(--color-gradient1) 0 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(0deg, var(--color-gradient1) 0 2px, transparent 2px 4px),
-    linear-gradient(var(--color-gradient2), var(--color-gradient3));
 }
