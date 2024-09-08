@@ -332,7 +332,7 @@
 
 .dialog::backdrop {
   opacity: 0.75;
-  background: var(--color-black, #000000);
+  background: var(--color-black, #000);
 }
 
 .box {
