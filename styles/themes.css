@@ -6,48 +6,53 @@
 */
 
 :root.theme-light {
-  --main-font-weight-title: 700;
-  --main-font-weight-text: 400;
-  --main-color: #000;
-  --bg-color: #fff;
-  --grid-gradient-color: #d3d3d3;
-  --bg-gradient-color-main: #e7e7e7;
-  --bg-gradient-color-secondary: #1a1a1a;
-}
-
-.theme-light .button__text,
-.theme-light .save-button--floppy {
-  color: var(--bg-color, #fff);
+  --background-color: white;
+  --border-color: black;
+  --text-color: black;
+  --text-color-accent: black;
+  --text-color-shadow: white;
+  --color-span-button: white;
+  --like-color: #f00;
+  --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --text-menu-size: 14px;
+  --text-size: 18px;
+  --heading-font-weight: 700;
+  --text-font-weight: 400;
+  --color-gradient1: #d3d3d3;
+  --color-gradient2: #e7e7e7;
+  --color-gradient3: #1a1a1a;
 }
 
 :root.theme-dark {
-  --main-font-weight-title: 785;
-  --main-font-weight-text: 465;
-  --main-color: #00CC14;
-  --bg-color: #000;
-  --grid-gradient-color: #000;
-  --bg-gradient-color-main: #007f0c;
-  --bg-gradient-color-secondary: #004306;
-}
-
-.theme-dark .button__text,
-.theme-dark .save-button--floppy {
-  color: var(--main-color, #00CC14);
+  --background-color: black;
+  --border-color: #00cc14;
+  --text-color: #00cc14;
+  --text-color-accent: #00cc14;
+  --text-color-shadow: black;
+  --color-span-button: #00cc14;
+  --like-color: #f00;
+  --heading-font-weight: 785;
+  --text-font-weight: 465;
+  --color-gradient1: #000;
+  --color-gradient2: #007f0c;
+  --color-gradient3: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
+  
   :root {
-    --main-font-weight-title: 785;
-    --main-font-weight-text: 465;
-    --main-color: #00CC14;
-    --bg-color: #000;
-    --grid-gradient-color: #000;
-    --bg-gradient-color-main: #007f0c;
-    --bg-gradient-color-secondary: #004306;
-  }
-
-  .button__text,
-  .save-button--floppy {
-    color: var(--main-color, #00CC14);
+    --background-color: black;
+    --border-color: #00cc14;
+    --text-color: #00cc14;
+    --text-color-accent: #00cc14;
+    --text-color-shadow: black;
+    --color-span-button: #00cc14;
+    --like-color: #f00;
+    --heading-font-weight: 785;
+    --text-font-weight: 465;
+    --color-gradient1: #000;
+    --color-gradient2: #007f0c;
+    --color-gradient3: #004306;
   }
 }
