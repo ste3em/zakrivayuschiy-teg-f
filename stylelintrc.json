@@ -3,6 +3,8 @@
   "rules": {
     "declaration-no-important": true,
     "property-no-unknown": true,
-    "no-duplicate-selectors": true
+    "no-duplicate-selectors": true,
+    "block-no-empty": true,
+    "color-no-invalid-hex": true
   }
 }

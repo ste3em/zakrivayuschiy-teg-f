@@ -3,19 +3,24 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-  "scripts": {
-    "test": "echo 'Привет!'",
-    "check": "prettier --check './**/*.{html,css,js}'",
-    "format": "prettier --write './**/*.{html,css,js}'",
-    "lint": "stylelint '**/*.css'",
-    "lintfix": "stylelint '**/*.css' --fix",
-    "checkAll": "npm run check && npm run lint",
-    "fixAll": "npm run format && npm run lintfix"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "prettier": "^2.8.0",
-    "stylelint": "^14.15.0"
+    "scripts": {
+        "test": "echo 'Привет!'",
+        "check": "prettier --check './**/*.{html,css,js}'",
+        "format": "prettier --write './**/*.{html,css,js}'",
+        "lint": "stylelint '**/*.css'",
+        "lintfix": "stylelint '**/*.css' --fix",
+        "checkAll": "npm run check && npm run lint",
+        "fixAll": "npm run format && npm run lintfix",
+        "lint:css": "stylelint 'styles/**/*.css'"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "prettier": "^2.8.0"
+    },
+    "devDependencies": {
+        "husky": "^9.1.5",
+        "stylelint": "^16.9.0",
+        "stylelint-config-standard": "^36.0.1"
     }
 }
