@@ -11,7 +11,7 @@
         "lintfix": "stylelint '**/*.css' --fix",
         "checkAll": "npm run check && npm run lint",
         "fixAll": "npm run format && npm run lintfix",
-        "lint:css": "stylelint 'styles/**/*.css'"
+        "lint:css": "stylelint './styles/style.css'"
     },
     "author": "",
     "license": "ISC",

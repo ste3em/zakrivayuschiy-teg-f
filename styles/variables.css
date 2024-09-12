@@ -13,7 +13,7 @@
   --text-color-shadow: white;
   --color-span-button: white;
   --like-color: #f00;
-  --heart-color: #FF0000;
+  --heart-color: #f00;
   --font: 'Inter-Variable';
   --font-accent: 'PressStart2P';
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);

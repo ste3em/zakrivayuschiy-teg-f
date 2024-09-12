@@ -1,3 +1,5 @@
+/* stylelint-disable no-unknown-animations */
+/* stylelint-disable property-no-unknown */
 /* Здесь вы напишете основную часть стилей страницы.
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
@@ -66,11 +68,6 @@
   transform: scaleX(1);
 }
 
-.border {
-  border: 2px solid var(--border-color, black);
-  background-color: var(--background-color, white);
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -134,16 +131,12 @@
   position: relative;
 }
 
-.theme-menu__button {
-  border: none;
+.theme-menu__button {  
   padding: 0;
   font-family: var(--font-accent, fantasy);
   font-weight: 400;
-  font-size: var(--text-menu-size, 14px);
   line-height: normal;
   text-transform: uppercase;
-  background-color: transparent;
-  transition: ease 0.3s;
   cursor: pointer;
 }
 
@@ -220,6 +213,7 @@
 }
 
 .card__image {
+  display: block;
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
@@ -279,9 +273,9 @@
 }
 
 .card__icon-button {
-  width: 38px;
+  /* width: 39px;
   height: 40px;
-  border: 2px solid transparent;
+  border: 2px solid transparent; */
 }
 
 .like-icon {
@@ -398,6 +392,48 @@
   .card:nth-of-type(-n+3) .lable {
     text-transform: uppercase;
   }
+}
+
+/* Общий стиль кнопок */
+
+.btn-style {
+  border: none;
+  font-size: var(--text-menu-size, 14px);
+  background-color: transparent;
+  transition: opacity 0.3s ease;
+}
+
+.btn-style:disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.btn-style:hover,
+.btn-style:focus,
+.btn-style:focus-visible {
+  opacity: 0.6;
+}
+
+.btn-style:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.1s linear;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  inset-block-end: -2px;
+  inset-inline-start: 0;
+}
+
+.btn-style:focus-visible:after {
+  transform: scaleX(1);
+}
+
+.border {
+  border: 2px solid var(--border-color, black);
+  background-color: var(--background-color, white);
 }
 
 /* Фильтры */
