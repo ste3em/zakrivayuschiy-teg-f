@@ -214,7 +214,7 @@
   position: relative;
   display: grid;
   align-items: center;
-  align-content: center;  
+  align-content: center;
   border-block: 2px solid var(--border-color, black);
   inline-size: 100%;
   aspect-ratio: 1 / 1;
