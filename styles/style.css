@@ -15,7 +15,7 @@
 */
 
 .page {
-  padding-block-start: 100px;
+  padding-block: 100px;
   color: var(--text-color, black);
   font-family: var(--font, fantasy);
   font-size: var(--text-size, 18px);
@@ -46,6 +46,7 @@
 }
 
 .button:focus {
+  box-shadow: 2px 2px 0 var(--main-color, #000);
   outline: none;
 }
 
@@ -60,6 +61,15 @@
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: var(--border-color, black);
+  transition: 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.button:hover::before {
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
 }
 
 .button:hover:after {
@@ -127,7 +137,7 @@
 .theme-menu__list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 0.4em;
 }
 
 .theme-menu__item {
@@ -158,6 +168,7 @@
   background-color: var(--text-color-accent, black);
   transition: ease 0.3s;
   transform: scaleX(0);
+  transform-origin: left;
 }
 
 .theme-menu__button:hover {
@@ -175,7 +186,7 @@
 }
 
 .theme-menu__button:focus-visible::after {
-  transform: none;
+  transform: scaleX(1);
 }
 
 .theme-menu__button:disabled {
@@ -186,13 +197,11 @@
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
-  left: -20px;
-  opacity: 0.6;
   animation-name: arrow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  pointer-events: none;
+  inset-inline-start: -20px;
   animation-duration: 0.5s;
 }
 
@@ -200,7 +209,6 @@
   display: flex;
   flex-direction: column;
   row-gap: 50px;
-  margin-block-end: 50px;
 }
 
 .card__heading {
@@ -395,41 +403,15 @@
   }
 }
 
-.card__icon-button .sparks {
-  opacity: 0;
-}
-
 .card__icon-button {
+  display: flex;
   border: 2px solid transparent;
+  background-color: transparent;
   transition: border 0.3s ease;
 }
 
-.card__like-button::before, .main__save-button::before, .dialog__button::before {
-  background-color: var(--border-color, black);
-  transition: 0.5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-
-.card__like-button:hover::before,.main__save-button:hover::before, .dialog__button:hover::before {
-  transition: 0.5s ease-in-out;
-  transform: scale(1);
-}
-
-.card__like-button:focus {
-  box-shadow: 2px 2px 0 var(--main-color, #000);
-}
-
-.main__save-button::before {
-  transform: translateX(-100%);
-}
-
-.main__save-button:focus-visible {
-  transition: ease 0.3s;
-}
-
-.dialog__button:focus-visible {
-  box-shadow: 2px 2px var(--border-color, black);
+.card__icon-button:hover::before{
+  background-color: transparent;
 }
 
 /* Фильтры */

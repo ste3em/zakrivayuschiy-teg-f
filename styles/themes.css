@@ -25,6 +25,7 @@
 }
 
 :root.theme-dark {
+  --main-color: #00cc14;
   --background-color: black;
   --border-color: #00cc14;
   --text-color: #00cc14;
