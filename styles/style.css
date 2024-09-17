@@ -68,7 +68,6 @@
 }
 
 .button:hover::before {
-  /* transition: 0.5s ease-in-out; */
   transform: scale(1);
 }
 
@@ -194,14 +193,16 @@
   pointer-events: none;
 }
 
+/* Для этого напишите кифрейм "arrow", в первом кадре которого будет описан текущий сдвиг псевдоэлемента, а в финальном — сдвиг на 4 пикселя правее. После этого запустите анимацию на псевдоэлементе длительностью 0.5 секунды с функцией времени ease-in-out, сделайте её бесконечной и проигрывающейся в две стороны.   */
+
 .theme-menu__button:disabled::before {
   content: '▶';
   position: absolute;
+  inset-inline-start: -20px;
   animation-name: arrow;
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-  inset-inline-start: -20px;
   animation-duration: 0.5s;
 }
 
@@ -285,6 +286,22 @@
   justify-content: flex-end;
   align-items: center;
   gap: 4px;
+}
+
+.card__icon-button {
+  display: flex;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:hover::before {
+  background-color: transparent;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--main-color, #000);
+  outline: none;
 }
 
 .like-icon {
@@ -401,17 +418,6 @@
   .card:nth-of-type(-n+3) .lable {
     text-transform: uppercase;
   }
-}
-
-.card__icon-button {
-  display: flex;
-  border: 2px solid transparent;
-  background-color: transparent;
-  transition: border 0.3s ease;
-}
-
-.card__icon-button:hover::before {
-  background-color: transparent;
 }
 
 /* Фильтры */
